@@ -7,6 +7,6 @@ app=FastAPI()
 app.include_router(note) # include the note router in the app
 
 # static folder
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 
 

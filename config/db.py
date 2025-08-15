@@ -1,5 +1,6 @@
-from pymongo import MongoClient
+from motor.motor_asyncio import AsyncIOMotorClient
+
 MONGO_URI = "mongodb://localhost:27017/"
 
 # connect to MongoDB
-conn = MongoClient(MONGO_URI)
+conn = AsyncIOMotorClient(MONGO_URI)
